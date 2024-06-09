@@ -24,7 +24,7 @@ console.log(apellido2)
 
 let x, y; //se pueden crear varias variables dentro de una misma línea
 x = 17, y = 21; //se puede hacer asignacion de varias variables dentro de la misma linea
-let z = x + y; //se asigna el valor de la operacion
+let z = x + y; //se asigna el valor de la operación
 console.log(z);
 
 let _1num = 31; //no utilizar numeros para iniciar el nombre de una variable
