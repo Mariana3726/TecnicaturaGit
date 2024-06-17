@@ -14,3 +14,5 @@ console.log(juntos);
 
 nombre += apellido; //tercera concatenación concatenamos usando el operador simplificado
 console.log(nombre);
+
+
