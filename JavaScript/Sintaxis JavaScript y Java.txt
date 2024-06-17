@@ -56,3 +56,7 @@ Operadores relacionales (boolean)
 >
 <=
 >=
+
+Operadores Lógicos
+And -> && (Doble aspersan)
+Or   ->
