@@ -15,4 +15,11 @@ console.log(juntos);
 nombre += apellido; //tercera concatenación concatenamos usando el operador simplificado
 console.log(nombre);
 
+//Hoy ya no se va a usar var, sino let y const
+let nombre2 = "Pedro";
+console.log(nombre2); 
+
+const apellido2 = "Lepes";
+//apellido2 = "Perez"; una constante no puede ser modificada
+console.log(apellido2)
 
