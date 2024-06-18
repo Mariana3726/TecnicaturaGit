@@ -34,4 +34,9 @@ if(vacaciones || diaDescanso){
 else{
     console.log("El padre no puede asistir al juego de su hijo")
 }
-
+//Operador ternario
+let resultado2 = 3 > 2 ? "verdadero" : "falso";
+console.log(resultado2)
+let numero = 8;
+resultado2 = numero % 2 == 0 ? "Es un Par" : "Es Impar"
+console.log(resultado2)
