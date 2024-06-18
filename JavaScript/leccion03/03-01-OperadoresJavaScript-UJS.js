@@ -46,11 +46,18 @@ let miNumero = "18";
 console.log(typeof miNumero);
 let edad2 = Number(miNumero); //esta es una función
 console.log(typeof edad2);
-if(edad2 >= 18){
-    console.log("Puede votar");
+//Función isNaN
+if(isNaN(edad2)){ //no es un número=is not a number(devuelve un resultado booleano)
+    console.log("Esta variable no contiene solo números")
 }
+else{
+    if(edad2 >= 18){
+        console.log("Puede votar");
+    }
 else {
-    console.log("No puede votar");
+        console.log("No puede votar");
+    }
 }
 let resultado3 = edad2 >= 18 ? "Puede votar" : "No puede votar";
 console.log(resultado3);
+
