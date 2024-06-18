@@ -40,3 +40,17 @@ console.log(resultado2)
 let numero = 8;
 resultado2 = numero % 2 == 0 ? "Es un Par" : "Es Impar"
 console.log(resultado2)
+
+//Convertir strig a número
+let miNumero = "18";
+console.log(typeof miNumero);
+let edad2 = Number(miNumero); //esta es una función
+console.log(typeof edad2);
+if(edad2 >= 18){
+    console.log("Puede votar");
+}
+else {
+    console.log("No puede votar");
+}
+let resultado3 = edad2 >= 18 ? "Puede votar" : "No puede votar";
+console.log(resultado3);
