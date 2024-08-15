@@ -16,7 +16,7 @@ print(f'Para el mes {mes} la estación es: {estacion}')
 '''''
 
 # Ejercicio 4: Etapas de la vida
-'''''
+
 edad = int(input('Digite su edad: '))
 mensaje = None
 if 0 <= edad < 10:
@@ -44,9 +44,9 @@ elif 100 <= edad < 110:
 else:
     mensaje = 'Error, etapa de vida no reconocida'
 print(f'Tu edad es: {edad}, {mensaje} ')
-'''
+
 #Ejercicio 5: Sistema de calificaiones
-calificacion =  int(input('Digite una calificación entre 0 y 10: '))
+'''calificacion =  int(input('Digite una calificación entre 0 y 10: '))
 if 9 <= calificacion <= 10:
     print('A')
 elif 8 <= calificacion <= 9:
@@ -58,4 +58,4 @@ elif 6 <= calificacion <= 7:
 elif 0 <= calificacion <= 6:
     print('F')
 else:
-    print('Valor incorrecto')
+    print('Valor incorrecto')'''

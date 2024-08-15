@@ -1,18 +1,18 @@
 # Ejercicio: calcular la estación del año
-#
-# mes = int(input('Digite un mes del año (1 - 12): '))
-# estacion = None
-# if mes == 1 or mes == 2 or mes == 3:
-#     estacion = 'Verano'
-# elif mes == 4 or mes == 5 or mes == 6:
-#     estacion = 'Otoño'
-# elif mes == 7 or mes == 8 or mes == 9:
-#     estacion = 'Invierno'
-# elif mes == 10 or mes == 11 or mes == 12:
-#     estacion = 'Primavera'
-# else:
-#     estacion = 'Error, no existe ese mes'
-# print(f'Para el mes {mes} la estación es: {estacion}')
+
+ mes = int(input('Digite un mes del año (1 - 12): '))
+ estacion = None
+ if mes == 1 or mes == 2 or mes == 3:
+    estacion = 'Verano'
+elif mes == 4 or mes == 5 or mes == 6:
+    estacion = 'Otoño'
+ elif mes == 7 or mes == 8 or mes == 9:
+     estacion = 'Invierno'
+elif mes == 10 or mes == 11 or mes == 12:
+    estacion = 'Primavera'
+ else:
+     estacion = 'Error, no existe ese mes'
+print(f'Para el mes {mes} la estación es: {estacion}')
 
 # Ejercicio: Etapas de la vida según la edad
 
@@ -37,7 +37,7 @@
 # print(f'Tu edad es: {edad}, {mensaje} ')
 
 # Ejercicio: Sistema de calificaciones
-calificacion = int(input('Digite una calificación entre 0 y 10: '))
+'''calificacion = int(input('Digite una calificación entre 0 y 10: '))
 if 9 <= calificacion <= 10:
     print('A')
 elif 8 <= calificacion < 9:
@@ -49,4 +49,4 @@ elif 6 <= calificacion < 7:
 elif 0 <= calificacion < 6:
     print('F')
 else:
-    print('Valor incorrecto...')
+    print('Valor incorrecto...')'''
