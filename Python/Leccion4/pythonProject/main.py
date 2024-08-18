@@ -1,6 +1,8 @@
-# LISTAS: las listas son un conjunto de elementos a los cuales se les asigna un índice.
+# LISTAS: las listas son un conjunto de elementos a los cuales se les asigna un índice. Las listas son
+# modificables o mutables.
 # Dentro de una misma lista, puede haber diferentes tipo de datos.Por ejemplo:
 # lista = Ariel(0), Natalia(1), Liliana(2), Osvaldo(3) (en este caso,tipo string)
+# Con las listas podemos usar tres funciones: append, insert y remove. También pop,clear y delete.
 
 nombres = ['Natalia', 'Osvaldo', 'Liliana', 'Ariel']
 print(nombres)
@@ -91,12 +93,39 @@ print('Rango con valores de inicio = 3, fin = 10, incremento = 2')
 for i in range(3, 11, 2):
     print(i)
 
+# TUPLAS: a diferencia de las listas, no se pueden modificar.
 
+cocina = ('cuchara', 'cuchillo', 'tenedor')
+print(cocina)
+print(len(cocina))#para contar los elementos de la tupla
 
+# Acceder a un elemento, para eso utilizamos corchetes no paréntesis
+print(cocina[0])
 
+# Mostrar la manera inversa
+print(cocina[-1])
 
+# Como acceder a un rango
+print(cocina[0:2]) #llega a 0 y 1, no llega al elemento 2
+#Ejemplo
+verduras = ('papa') #si no ponemos la coma,pasa a ser un tipo string,cadena.Hay que poner al menos un elemento con coma.
 
+#Recorremos los elementos de la tupla
+for cocinar in cocina:
+    print(cocinar, end=' ') #Print usa \n para saltos de línea. Usamos end=' 'para eliminar los saltos de línea
 
+#Hacemos una modificación en la tupla(hacemos conversión de tupla a lista y luego de lista a tupla)
+
+cocinaLista = list(cocina)
+cocinaLista[0] = 'Plato'
+cocina = tuple(cocinaLista)
+print('\n' ,cocina)
+
+#En las tuplas NO se pueden usar las funciones insert, append y remove
+
+#Eliminamos tupla
+#del cocina
+#print(cocina)
 
 
 
