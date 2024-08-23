@@ -15,6 +15,7 @@ public class EjercicioWhile01 {
         }while(contador <= 7);
         
         //Uso de las palabras break y continue junto a las etiquetas Labels
+        //ejemplo: Inicio
                 
         for(var contando = 0; contando < 7; contando++){
             if(contando % 2 == 0){
