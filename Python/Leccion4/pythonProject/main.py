@@ -3,6 +3,8 @@
 # Dentro de una misma lista, puede haber diferentes tipo de datos.Por ejemplo:
 # lista = Ariel(0), Natalia(1), Liliana(2), Osvaldo(3) (en este caso,tipo string)
 # Con las listas podemos usar tres funciones: append, insert y remove. También pop,clear y delete.
+# Las listas se conocen en otros lenguajes como arreglos o vectores
+
 
 nombres = ['Natalia', 'Osvaldo', 'Liliana', 'Ariel']
 print(nombres)
@@ -39,6 +41,11 @@ print(len(nombres)) #le pasamos como parámetro la lista
 
 #Ahora agregamos un elemento
 nombres.append('Marcelo')
+nombres.append([1, 2, 3])
+nombres.append(True)
+nombres.append(10.45)
+nombres.append([4, 5])
+nombres.append(7)
 print(nombres)
 
 #Ahora insertamos un elemento en un índice específico
@@ -127,14 +134,213 @@ print('\n' ,cocina)
 #del cocina
 #print(cocina)
 
+#Tipo set
+planetas = {'Marte', 'Júpiter', 'Venus'}
+print(len(planetas)) #Usamos la función len = lenght significa largo
 
+#Revisar si un elemento existe dentro del set
+print('Marte' in planetas)
 
+#Agregar un elemento
+planetas.add('Tierra') #función add para agregar
+print(planetas)
 
+#Eliminar elementos (puede arrojar un error si el elemento no existe)
+planetas.remove('Júpiter') #Esta función marca error si el elemento no está bien escrito
+print(planetas)
+planetas.discard('Tierra') #En esta función si no está bien escrito, directamente no borra nada
+print(planetas)
 
+#Limpiar set o conjunto
+planetas.clear()
+print(planetas)
 
+#Eliminar set o conjunto
+del planetas
+#print(planetas)
 
+# "Maradona" : 10 Un diccionario esta compuesto por dos elementos
+# Una llave y un valor
+# dict(key,value)
+diccionario = {
+    'IDE' : 'Integrated Development Enviroment' ,
+    'POO' : 'Programación Orientada a Objetos' ,
+    'SABD' : 'Sistema de Administración de Base de Datos'
+}
+# Verificar la cantidad de elementos del diccionario
+print(len(diccionario))
+print(diccionario)
 
+# Acceder a un diccionario con la llave (key)
+print(diccionario['IDE'])
 
+# Otra forma de recuperar un elemento Get = obtener
+print(diccionario.get('POO'))
+print(diccionario.get('SABD'))
+
+# modificamos elementos
+diccionario['IDE'] = 'Entorno de desarrollo integrado'
+print(diccionario)
+
+# Concatenamos listas
+lista1 = [1, 2, 3, 1]
+lista2 = [4, 5, 6, 1]
+lista3 = lista1+lista2
+print(lista3)
+
+lista3.extend([7, 8, 9, 1]) #extend para agregar elementos a una lista
+print(lista3)
+
+print(lista3.index(3)) # Index: para saber en que indice esta ubicado el elemento
+#print(lista3.index(0))
+
+# Cómo saber cuántos valores repetidos hay dentro de una lista
+print(lista3.count(1)) # cuenta cuántos valores iguales hay dentro de la lista
+
+# Para poner la lista al reves
+lista3.reverse()
+print(lista3)
+
+# Para que una lista se multiplique repitiendo sus elementos
+lista3 = lista3 * 2
+print(lista3)
+
+# Métodos de ordenamiento
+lista3.sort() # ordena ascendentemente los elementos
+print(lista3)
+lista3.sort(reverse=True) #ordena descendentemente
+print(lista3)
+
+# Repaso de tuplas
+tupla = (4, 'Hola', 6.78, [1, 2, 78], 4,'Hola') #Puede tener diferentes tipos de datos dentro
+print(tupla)
+
+print(4 in tupla) # Acción boolenana, su respuesta es de tipo booleana
+# Lo que no podemos usar dentro de tuplas son: index, count, len
+# En tuplas se puede convertir lista a tupla y de tupla a lista
+
+# Repaso de set o conjunto
+# para definir un conjunto
+conjunto2= set()
+conjunto1 ={'chau'}
+conjunto2.add(7)
+conjunto2.add("Hola")
+print(conjunto2)
+conjunto1.add('Hola')
+print(conjunto1)
+print(3 not in conjunto1) #preguntamos si el numero 3 no esta en el conjunto 1, devuelve un valor booleano
+
+# Cómo hacer la igualdad de dos conjuntos
+print(conjunto1 == conjunto2)#Nos devuelve como repsuesta un valor booleano
+
+#Operaciones en conjuntos
+conjunto3 = conjunto1 | conjunto2 #La línea es la que une los dos conjuntos
+print(conjunto3)
+
+conjunto3 = conjunto1 & conjunto2 #qué elemento tienen en común los dos conjuntos
+print(conjunto3)
+
+conjunto3 = conjunto1 - conjunto2 #Asigna el valor que está en el conjunto1 y no en el conjunto2
+print(conjunto3)
+conjunto3 = conjunto2 - conjunto1 #Asigna el valor que está en el conjunto2 y no en el conjunto1
+print(conjunto3)
+
+conjunto3 = conjunto1 ^ conjunto2 #Son los elementos que no comparten oson diferentes entre ambos
+print(conjunto3)
+
+#preguntamos si un conjunto es un subconjunto de otro
+conjunto3 = conjunto1 | conjunto2
+print(conjunto1.issubset(conjunto3))
+print(conjunto2.issubset(conjunto3))
+print(conjunto3.issubset(conjunto1))
+print(conjunto3.issubset(conjunto2))
+
+print(conjunto3.issuperset(conjunto1)) #Preguntamos si los elementos del conjunto1 están dentro del 3
+print(conjunto3.issuperset(conjunto2)) #Si el verdadero quiere decir que el conjunto3 es un superconjunto
+print(conjunto2.issuperset(conjunto3))
+
+#Cómo saber si ambos conjuntos son disconexos, que no comparten un elemento en común
+print(conjunto1.isdisjoint(conjunto2))#False, si hay cosas en común
+
+#Convertir un conjunto totalmente en inmutable(no se puede agregar ni modificar,ni eliminar elemntos del conj)
+conjunto1 = frozenset
+
+# Repaso diccionarios(los diccionarios aceptan cualquier tipo de dato:cadenas,enteros,reales,listas,tuplas,otros diccionarios)
+
+diccionarioNuevo = {'Azul' : 'Blue', 'Rojo' : 'Red', 'Verde' : 'Green', 'Amarillo' : 'Yellow'}
+print(diccionarioNuevo)
+#Cómo eliminar
+del (diccionarioNuevo['Azul'])
+print(diccionarioNuevo)
+
+diccionario2 = {'Ariel' : {'edad': 40, 'Altura': 1.83}, 'Osvaldo': [45, 1.85], 'Natalia': [35, 1.67]}
+print(diccionario2)
+
+#Ejercicio con diccionario
+
+seleccionArgentina = {
+    10: {'Nombre': 'Lionel Messi', 'Edad': 35, 'Altura': 1.60, 'Precio': '50 millones', 'Posicion': 'extremo derecho'},
+    11: {'Nombre': 'Angel di Maria', 'Edad': 34, 'Altura': 1.80, 'Precio': '12 millones', 'Posicion': 'extremo derecho'},
+    24: {'Nombre': 'Paulo Dybala', 'Edad': 28, 'Altura': 1.77, 'Precio': '35 millones', 'Posicion': 'media punta'},
+    19: {'Nombre': 'Nicolas Otamendi', 'Edad': 34, 'Altura': 1.83, 'Precio': '3.5 millones', 'Posicion': 'defensa central'},
+    18: {'Nombre': 'Franco Armani', 'Edad': 30, 'Altura': 1.89, 'Precio': '3.5 millones', 'Posicion': 'portero'},
+    17: {'Nombre': 'Leandro Paredes', 'Edad': 25, 'Altura': 1.89, 'Precio': '5.5 millones', 'Posicion': 'extremo izquierdo'},
+    12: {'Nombre': 'Enzo Fernandez', 'Edad': 28, 'Altura': 1.90, 'Precio': '4.5 millones', 'Posicion': 'centro'},
+    1: {'Nombre': 'Julian Alvarez', 'Edad': 32, 'Altura': 1.88, 'Precio': '5 millones', 'Posicion': 'centro'}
+}
+
+for llave, valor in seleccionArgentina.items():
+    print(llave, valor)
+
+#para ver la cantidad de elementos del diccionario
+print('Tenemos cargados en el diccionario la cantidad de jugadores: ',  end=' ')
+print(len(seleccionArgentina)) #son 8
+
+#Método pilas
+pila = [1,2,3]
+
+#Agregar elementos a la pila por el final
+pila.append(4)
+pila.append(5)
+print(pila)
+
+#Ahora sacamos elementos de la fila, por el final
+elementoBorrado = pila.pop() #quita el último elemento y lo guarda en la variable
+print(f'Sacamos el elemento {elementoBorrado}') #quita el último elemento
+print(f'La pila ahora quedó asi: {pila}')
+
+#Colas con listas(estructura de datos de tipo fifo(first input / first output)
+cola = ['Ariel', 'Osvaldo', 'Liliana', 'Pilar']
+
+#Agregamos elementos al final de la cola
+cola.append('Natalia')
+cola.append('José')
+print(cola)
+
+#Sacamos elementos de la cola
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
+
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
+
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
+
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
+
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
+
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
 
 
 
