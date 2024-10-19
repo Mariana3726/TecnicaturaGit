@@ -7,11 +7,15 @@ public class Empleado extends Persona{
     private double sueldo;
     private static int contadorEmpleados; //es para incrementar
     
-    //Constructor
+    //Constructores
+    public Empleado(){ //Constructor 1
+         this.idEmpleado = ++Empleado.contadorEmpleados;
+    }
 
-    public Empleado(String nombre,double sueldo) {
-        super(nombre);
-        this.idEmpleado = ++Empleado.contadorEmpleados;
+    public Empleado(String nombre,double sueldo) { //Constructor 2
+        //super(nombre);
+        this(); //estamos llamando desde aqui al constructor vacío(llamar a un constructor interno)
+        this.nombre = nombre;
         this.sueldo = sueldo;
     }
 
