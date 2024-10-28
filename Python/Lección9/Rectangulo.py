@@ -11,4 +11,6 @@ class Rectangulo(FiguraGeometrica, Color):
         return self.alto * self.ancho
 
     def __str__(self):
-        return f' {FiguraGeometrica.__init__(self)}, {Color.__str__(self)}'
+        #return f' {FiguraGeometrica.__init__(self)}, {Color.__str__(self)}'
+
+        return f'{super().__str__()}, {Color.__str__(self)}'
