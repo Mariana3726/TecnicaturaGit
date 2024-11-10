@@ -17,7 +17,7 @@ public class Arreglos_Ejercicio_6 {
         System.out.println("Llenar el primer arreglo: ");
         do{
             for(int i=0; i<10; i++){
-                System.out.println((i+1)+". Ingrese un número: ");
+                System.out.print((i+1)+". Ingrese un número: ");
                 a[i] = entrada.nextInt();
             }
             //Comprobamos si el arreglo esta ordenado
@@ -36,10 +36,10 @@ public class Arreglos_Ejercicio_6 {
             }
         }while(creciente == false);
         
-        System.out.println("Llenar el segundo arreglo: ");
+        System.out.print("Llenar el segundo arreglo: ");
         do{
             for(int i=0; i<10; i++){
-                System.out.println((i+1)+". Ingrese un número: ");
+                System.out.print((i+1)+". Ingrese un número: ");
                 b[i] = entrada.nextInt();
             }
             for(int i=0; i<9; i++){
@@ -53,7 +53,7 @@ public class Arreglos_Ejercicio_6 {
             }
             
             if(creciente == false){
-                System.out.println("\nEl arreglo esta desordenado, vuelva a ingresar: ");
+                System.out.print("\nEl arreglo esta desordenado, vuelva a ingresar: ");
             }
         }while(creciente == false);
         
@@ -89,9 +89,9 @@ public class Arreglos_Ejercicio_6 {
                 }
         }
         
-        System.out.println("\nEl arreglo c completo es: ");
+        System.out.print("\nEl arreglo c completo es: ");
         for(k=0; k<20; k++){
-            System.out.println(c[k]+" - ");
+            System.out.print(c[k]+" - ");
         }
         System.out.println();
     }

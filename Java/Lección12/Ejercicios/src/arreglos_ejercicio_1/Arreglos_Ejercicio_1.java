@@ -13,7 +13,7 @@ public class Arreglos_Ejercicio_1 {
         int numeros[] = new int[10];
         
         for (int i=0; i<10; i++){
-            System.out.println((i+1)+". Ingresa un número: ");
+            System.out.print((i+1)+". Ingresa un número: ");
             numeros [i] = entrada.nextInt();
         }
         

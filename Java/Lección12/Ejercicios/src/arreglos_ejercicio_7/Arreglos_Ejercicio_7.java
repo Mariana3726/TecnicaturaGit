@@ -17,7 +17,7 @@ public class Arreglos_Ejercicio_7 {
         System.out.println("Llenar el arreglo: ");
         do {
             for (int i = 0; i < 10; i++) {
-                System.out.println(i + ". Ingrese un número: ");
+                System.out.print(i + ". Ingrese un número: ");
                 arreglo[i] = entrada.nextInt();
             }
             for (int i = 0; i < 9; i++) {
@@ -47,7 +47,7 @@ public class Arreglos_Ejercicio_7 {
         }
         else{
             if(arreglo[i] == numero){
-                System.out.println("\nNúmero encontrado en la posición: "+i);
+                System.out.print("\nNúmero encontrado en la posición: "+i);
             }
             else{
                 System.out.println("Número no encontrado");

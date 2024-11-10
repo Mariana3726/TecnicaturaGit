@@ -19,7 +19,7 @@ public class Arreglos_Ejercicio_3 {
         do{
             //llenado del arreglo
             for(int i=0; i<5; i++){
-                System.out.println((i+1)+". Ingrese un número: ");
+                System.out.print((i+1)+". Ingrese un número: ");
                 arreglo[i] = entrada.nextInt();
             }
             //comprobar si el arreglo esta ordenado en orden creciente

@@ -15,7 +15,7 @@ public class Arreglos_Ejercicio_4 {
         
         System.out.println("Llenar el arreglo: ");
         for(int i=0; i<10; i++){
-            System.out.println(i+". Ingrese un número: ");
+            System.out.print(i+". Ingrese un número: ");
             arreglo[i] = entrada.nextInt();
         }
         System.out.println();
